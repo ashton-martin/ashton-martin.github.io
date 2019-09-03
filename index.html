@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ashton's Amazing Webspace</title>
+        <style>
+            body {
+                background: rgb(125, 198, 205);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgb(239, 80, 41);
+                margin: 0 auto;
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+                border-radius: 30px; 
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="all-contents"> 
+            <nav>
+                <header> Ashton's Amazing Webspace</header>
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div class="sidebar">
+                    <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/45063150_10218163613501223_4818399427129507840_n.jpg?_nc_cat=101&_nc_oc=AQmpIHciOwFyy1kETyS1PADSoojf_M8QoJ00O7sZ7ArgE5ivfG2hcL6UAIGEH8GPj9Q&_nc_ht=scontent-atl3-1.xx&oh=6d959fdc1cb58746531908803cf28a53&oe=5DCD589C">
+                </div>
+    
+                <div class="content">
+                    <header>Ashton Martin</header>
+                    <p>Instructor at Operation Spark</p>
+                      <section class="interests">
+                        <header>Interests</header>
+                        <ul>
+                                        n   <li>Yoga</li>
+                            <li>Traveling</li>
+                            <li>Reading</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>    
