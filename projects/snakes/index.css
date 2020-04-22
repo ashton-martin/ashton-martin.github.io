@@ -34,3 +34,12 @@ body, #board {
   background-color: red;
   z-index: 1;
 }
+
+#gameTitle {
+    color: white;
+}
+
+#secondGameTitle {
+    color: green;
+    text-align: center;
+}
