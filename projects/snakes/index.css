@@ -1,5 +1,6 @@
 body, #board {
   background-color: black;
+   text-align: center;  
   
 }
 
@@ -10,6 +11,7 @@ body, #board {
 }
 
 #timer, #score, #highScore {
+    text-align: center;
   color: white;
 }
 
