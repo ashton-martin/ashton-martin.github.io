@@ -1,17 +1,19 @@
 body, #board {
   background-color: black;
-   text-align: center;  
+  position: relative;
+  text-align: center;
   
 }
 
 #board {
+margin: auto; 
   width: 440px;
   height: 440px;
   border: 1px solid white;
 }
 
 #timer, #score, #highScore {
-    text-align: center;
+  text-align: center;
   color: white;
 }
 
@@ -28,7 +30,7 @@ body, #board {
   z-index: 2;
 }
 
-#snake-head {
+#snake-head { 
   background-color: darkgreen;
 }
 
