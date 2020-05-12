@@ -35,7 +35,7 @@ var init = function (window) {
     var background = opspark.makeBackground(app,ground);
     view.addChild(background);
     
-    var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q your mom!', 
+    var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck | space: fire | q abort mission!', 
         '20px Arial',
         'grey', 'left');
     help.x = 10;
