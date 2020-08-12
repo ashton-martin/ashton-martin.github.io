@@ -257,6 +257,8 @@ circles.push(circle);
 
 ````
 
+**HINT:** to create a function use the following syntax: `function nameOfFunction(parameters) { }`
+
 ## What does this code actually do?
 
 First we call a function from the `draw` library: a collection of functions that allow us to draw various shapes on our `canvas`. This method, `draw.randomCircleInArea` will draw a circle of random size, color, and location within the screen along with a few other settings. Check out the parameters of the function below:
