@@ -1,0 +1,72 @@
+<script>
+    //game will be played agaist the computer
+    
+    //write a function called computerPlay
+    function computerPlay(){
+            //store rock, paper, scissors in an array
+                const selection = ["rock", "paper", "scissors"];
+                //randomly select an index from the array
+                    let randomSelection = selection[Math.floor(Math.random() * selection.length)]
+         //have function randomly return rock, paper or scissors
+        return  randomSelection;
+    }
+    
+    
+    
+    
+    
+    //write a function named game
+    
+    function game(){
+    
+    //place the previous function inside to play a 5 round game 
+    //the play function will take two parameters: playerSelection & Computer playerSelection
+    function playRound(playerSelection, computerSelection){
+    //if playerSelection is Rock and computerSelection is Paper
+        //make case sensitve so if playerSelection enters Rock, rock,ROCK, etc.
+        if (playerSelection.toUpperCase() === "Rock".toUpperCase() && computerSelection.toUpperCase() === "Paper".toUpperCase()){
+            //return "You Lose! Paper beats rock"
+            return "You Lose! Paper beats Rock"
+        }
+    //    else if (playerSelection.toUpperCase() === "Paper".toUpperCase() && computerSelection.toUpperCase() === "Scissors".toUpperCase()){
+    //         //return "You Lose! Paper beats rock"
+    //         return "You Lose! Scissors beats Paper"
+    //     }
+    //    else if (playerSelection.toUpperCase() === "Scissors".toUpperCase() && computerSelection.toUpperCase() === "Rock".toUpperCase()){
+    //         //return "You Lose! Paper beats rock"
+    //         return "You Lose! Rock beats Scissors";
+    //     }
+    }
+    //call the playround function 5 times
+    for (var i = 0; i < 5; i++){
+        //set score for user and computer to 0
+        let playerScore = 0;
+        let computerScore = 0; 
+        let roundSelectoin = playRound();
+        //if the computer wins, increase score
+        if (roundSelectoin === "You Lose! Paper beats Rock"){
+            computerScore++; 
+            return "Computer has won!" 
+        }
+        console.log(computerScore)
+    }
+    }
+    
+    //get a selction from user inputing their choice
+    const playerSelection = prompt();
+    const computerSelection = computerPlay();
+    // test to see what the computer has selected
+    console.log(computerSelection)
+    //return the results of the function call
+    // console.log(playRound(playerSelection, computerSelection))
+    
+    
+    
+    //game function will keeps score and reports winner or loser at end
+    
+    
+    
+    </script>
+    
+    
+    
