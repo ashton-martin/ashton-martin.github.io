@@ -66,6 +66,7 @@ Now that you have a button, let's figure out a way to keep track of the number o
             cookies = cookies + number;
         };
         </details>
+        
 You can probably already see how this works - the cookieClick function is called by the button, passing the number 1 as the argument (the thing inside the brackets). The cookies variable is then incremented by that number we passed. You could make the number in the onClick whatever you wanted - for example, if you set it to -1 the number will actually go down by one every click!
 
 The reason we pass our number to the function as an argument, is because later we might want to use numbers other than 1 (for example, if we add cursors to click for us). Inside the function we use number to stand for whatever we might want to pass into the function. This makes the function more flexible, and will save us work later on.
