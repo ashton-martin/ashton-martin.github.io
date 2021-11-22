@@ -32,28 +32,40 @@ These will hold the core of your game - the HTML, CSS and Javascript code for yo
 
 And you're good to go! You can now start adding code to any of the three files and then when you open the HTML file in a browser they will be linked (like how your previous projects where able to run.)
 
-### TThe basics - clicking
+### The basics - clicking
 
 Now for the meat of the game. Clicking on things. What you learn here will act as the basis for everything you learn later, so make sure you're following this carefully.
 
 The basic mechanic for this is simple. You want to be able to click a button, and have a number on the screen increase. This requires a number of things.
 
-An interface element (in our case a button) to click
-Some game logic that keeps track of a number
-A javascript function that the button can call to make the number go up
-An interface element where the number can be displayed
-A way to update that interface element
-The button is simple enough. Add a button tag to your HTML. Now you have a button. You'll also want to add an onClick attribute to it - use something like
-onClick="cookieClick(1)"
-for that. This will be the function that's called when the button is clicked. Note that while we're using a button here, really you can use any element, including things like divs or spans.
+    - An interface element (in our case a button) to click
+    - Some game logic that keeps track of a number
+    - A javascript function that the button can call to make the number go up   
+    - An interface element where the number can be displayed
+    - A way to update that interface element
 
-Keeping track of a number is simple too. In the javascript file, define a variable (call it whatever you like) and set it to 0, something like
-var cookies = 0;
-You now need to tie these together by writing a function that makes the number go up. Functions are how you can make javascript execute a small piece of code. Each time the function is called, everything inside it will run. In our case, we want to take the variable we just defined and increase it. Add the cookieClick() function (or whatever you called it) to the javascript file. It should look like the below.
+The button is simple enough. 
+   1. Add a button tag to your HTML.  
+       * You'll also want to add an onClick attribute to it - use something like `onClick="cookieClick(1)"` or whatever descriptor that you want to give to it to remember what this butotn is used for.
+            - This will be the function that's called when the button is clicked. Note that while we're using a button here, really you can use any element, including things like divs or spans.
+Now that you have a button, let's figure out a way to keep track of the number of clicks. Don't stress, this part is simple enough!
 
-function cookieClick(number){
-    cookies = cookies + number;
-};
+   2. Navigate to your javascript file (main.js)
+       - define a variable (call it whatever you like) and set it to 0 
+         - You could declare something like `var cookies = 0;`
+   3. You now need to tie these together by writing a function that makes the number go up. 
+        <details>
+        <summary> What are functions? </summary>
+        Functions are how you can make javascript execute a small piece of code. Each time the function is called, everything inside it will run. In our case, we want to take the variable we just defined and increase it. 
+        </details>
+
+      - Add the cookieClick() function (or whatever you called it) to the javascript file. 
+      <details>
+      <summary>It should look like this.</summary>
+        function cookieClick(number){
+            cookies = cookies + number;
+        };
+        </details>
 You can probably already see how this works - the cookieClick function is called by the button, passing the number 1 as the argument (the thing inside the brackets). The cookies variable is then incremented by that number we passed. You could make the number in the onClick whatever you wanted - for example, if you set it to -1 the number will actually go down by one every click!
 
 The reason we pass our number to the function as an argument, is because later we might want to use numbers other than 1 (for example, if we add cursors to click for us). Inside the function we use number to stand for whatever we might want to pass into the function. This makes the function more flexible, and will save us work later on.
