@@ -1,0 +1,23 @@
+
+            /* .top-box {
+                display: flex;
+                flex-direction: column;
+            } */
+
+            .main-box {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: lightgray;
+            }
+
+            .main-box > div {
+                background-color: lightpink;
+                margin: 20px;
+                padding: 30px;
+                font-size: 20px;
+            }
+
+            /* .credits {
+                background-color: lightskyblue;
+            } */
