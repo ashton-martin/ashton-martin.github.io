@@ -1,12 +1,14 @@
 let myLibrary = [];
- 
+console.log("Hi!");
 myLibrary.push({
     title: "The Power of Now",
     author: "Eckhart Tolle",
     pages: 236,
     read: null
-
 });
+
+console.log(myLibrary);
+
 function Book() {
   // the constructor...
 }
