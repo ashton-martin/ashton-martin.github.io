@@ -7,11 +7,9 @@
 const ashton = {
   pronouns: "she" | "her",
   code: [Javascript, jQuery, HTML, CSS],
-  tools: [ Node, Docker, MongoDB, Figma, ],
+  tools: [ Node, Docker, MongoDB, Figma ],
   hobbies: ["yoga", "traveling", "eating"],
   location: Remote
-  
- challenge: "I am doing the #100DaysOfCode challenge focused on react and typescript"
 }
 ```
 
