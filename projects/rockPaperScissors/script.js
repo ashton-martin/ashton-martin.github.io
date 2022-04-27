@@ -1,14 +1,14 @@
 // let computerRoll;
 // let playerRoll;
-let playerScore = 0; 
-let computerScore = 0; 
-let computerRoll = computerPlay();
-let playerRoll = prompt("Rock, paper, or scissors?");
+let playerScore = 0; //starting score
+let computerScore = 0; //starting score
+let computerRoll; //store the computer roll 
+let playerRoll; //store the player's roll
 
 function computerPlay() {
     //will return Rock, Paper, or Scissors
     let random = Math.random() * 1;
-    var roll;
+    let roll;
     if (random < 0.3){
         roll = "rock";
     } else if (random < 0.6){
@@ -25,8 +25,8 @@ function playRound(playerSelection, computerSelection){
     // computerRoll = computerPlay();
     // playerRoll = prompt("Rock, paper, or scissors?");
     console.log("The player has rolled " + playerRoll);
-    var display;
-    var whoWon; 
+    let display;
+    let whoWon; 
     if (playerSelection.toLowerCase() === "rock" && computerSelection.toLowerCase() === "paper"){
         display = "You lose! Paper beats Rock";
         whoWon = "computer";
@@ -62,15 +62,15 @@ function playRound(playerSelection, computerSelection){
 
 
 function game(){
+    playerRoll = prompt('Rock, paper, or scissors?')
+    computerRoll = computerPlay();
     playRound(playerRoll, computerRoll);
-    playRound(playerRoll, computerRoll);
-    // for (var i = 0; i < 5; i++){
- 
-        // roundWinner();    
-   //}
    
 }
-game();
+for (var i = 0; i < 5; i++){
+    game();
+}
+
 
 
 
