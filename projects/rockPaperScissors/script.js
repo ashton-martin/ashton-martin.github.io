@@ -62,14 +62,15 @@ function playRound(playerSelection, computerSelection){
 
 
 function game(){
-    playerRoll = prompt('Rock, paper, or scissors?')
+    // playerRoll = prompt('Rock, paper, or scissors?')
+    
     computerRoll = computerPlay();
     playRound(playerRoll, computerRoll);
    
 }
-for (var i = 0; i < 5; i++){
+// for (var i = 0; i < 5; i++){
     game();
-}
+// }
 
 
 
