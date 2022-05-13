@@ -1,0 +1,75 @@
+ .u-section-1 {
+  background-image: url("images/arcade-11.png");
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 736px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 240px;
+  height: 118px;
+  margin: 173px auto 0 -28px;
+}
+
+.u-section-1 .u-image-2 {
+  width: 220px;
+  height: 111px;
+  margin: -105px 0 0 auto;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 1.5rem;
+  margin: 7px 68px 0 auto;
+}
+
+.u-section-1 .u-text-2 {
+  font-size: 1.5rem;
+  margin: -20px auto 0 17px;
+}
+
+.u-section-1 .u-image-3 {
+  width: 231px;
+  height: 114px;
+  margin: 189px -11px 0 auto;
+}
+
+.u-section-1 .u-image-4 {
+  width: 229px;
+  height: 108px;
+  margin: -108px auto 0 -17px;
+}
+
+.u-section-1 .u-text-3 {
+  font-size: 1.5rem;
+  margin: 11px 27px 0 auto;
+}
+
+.u-section-1 .u-text-4 {
+  font-size: 1.5rem;
+  margin: -26px auto 59px 27px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 607px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 465px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 349px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 220px;
+  }
+}
