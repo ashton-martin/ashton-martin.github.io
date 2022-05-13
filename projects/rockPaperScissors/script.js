@@ -1,9 +1,19 @@
-// let computerRoll;
-// let playerRoll;
+//$(document).ready(function(){
+//button even handlers
+const rockBtn = document.getElementById("rock");
+const paperBtn = document.getElementById('paper');
+const scissorsBtn = document.getElementById('scissors');
+const playAgainBtn = document.getElementById('play-again')
+//})
+//scoring variables
 let playerScore = 0; //starting score
 let computerScore = 0; //starting score
+
+// computer vs player rolls
 let computerRoll; //store the computer roll 
 let playerRoll; //store the player's roll
+
+
 
 function computerPlay() {
     //will return Rock, Paper, or Scissors
@@ -22,8 +32,9 @@ function computerPlay() {
 }
 
 function playRound(playerSelection, computerSelection){
-    // computerRoll = computerPlay();
-    // playerRoll = prompt("Rock, paper, or scissors?");
+    computerRoll = computerPlay(); //stores result of computer's roll
+    playerSelection = playerRoll
+    computerSelection = computerRoll;
     console.log("The player has rolled " + playerRoll);
     let display;
     let whoWon; 
@@ -61,17 +72,28 @@ function playRound(playerSelection, computerSelection){
 }
 
 
-function game(){
-    // playerRoll = prompt('Rock, paper, or scissors?')
-    
-    computerRoll = computerPlay();
-    playRound(playerRoll, computerRoll);
+
    
-}
-// for (var i = 0; i < 5; i++){
-    game();
-// }
+//event handlers
+rockBtn.addEventListener('click', () => {
+    playerRoll = 'rock'
+    playRound(playerRoll, computerRoll);
+})
+paperBtn.addEventListener('click', () => {
+    playerRoll = 'paper'
+    playRound(playerRoll, computerRoll);
+})
+scissorsBtn.addEventListener('click', () => {
+    playerRoll = 'scissors'
+    playRound(playerRoll, computerRoll);
+})
 
+playAgainBtn.addEventListener('click',() =>  {
+    playerScore = 0
+    computerScore = 0; 
+    console.clear()
+})
 
+$('.game-score').append("Player Score: " + playerScore)
 
-
+$('.game-score').append("Computer Score: " + computerScore)
