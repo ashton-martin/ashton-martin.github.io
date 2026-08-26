@@ -77,8 +77,8 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<p>A project, a career question, or a hiring conversation — email is the easiest way.</p>
-								<form method="post" action="mailto:ashton.s.martin@gmail.com">
+								<p>A project, a career question, or a hiring conversation — email is the easiest way: <a href="mailto:ashton.s.martin@gmail.com">ashton.s.martin@gmail.com</a>.</p>
+								<form id="contact-form" method="post" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -364,6 +364,25 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				(function () {
+					var form = document.getElementById('contact-form');
+					if (!form) return;
+					form.addEventListener('submit', function (event) {
+						event.preventDefault();
+						var name = ((form.elements.name && form.elements.name.value) || '').trim();
+						var email = ((form.elements.email && form.elements.email.value) || '').trim();
+						var message = ((form.elements.message && form.elements.message.value) || '').trim();
+						var subject = encodeURIComponent('Website message' + (name ? ' from ' + name : ''));
+						var body = encodeURIComponent(
+							(name ? 'Name: ' + name + '\n' : '') +
+							(email ? 'Email: ' + email + '\n\n' : '\n') +
+							message
+						);
+						window.location.href = 'mailto:ashton.s.martin@gmail.com?subject=' + subject + '&body=' + body;
+					});
+				})();
+			</script>
 
 	</body>
 </html>
